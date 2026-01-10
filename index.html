@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syncra Dynamics - Precision Motors & Gear Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.svg" alt="Syncra Dynamics Logo" class="logo-img">
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT US</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="nav-link">PRODUCTS <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#dc-stepper">DC Stepper Motors</a></li>
+                        <li><a href="#ac-synchronous">AC Synchronous Motors</a></li>
+                        <li><a href="#gearbox">Gear Box</a></li>
+                        <li><a href="#accessories">Extra Accessories</a></li>
+                        <li><a href="#heatsink">Heat Sink</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#drawings" class="nav-link">DRAWINGS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Banner Slider -->
+    <section id="home" class="hero">
+        <!-- Hero Content Section (Logo, Title, Buttons) -->
+        <div class="hero-content-section">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="logo.svg" alt="Syncra Dynamics Logo" class="hero-logo-img">
+                </div>
+                <h2 class="hero-title">Engineering Excellence in Motion</h2>
+                <p class="hero-subtitle">Leading Manufacturer of Precision Motors & Gear Systems</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner Slider Section -->
+        <div class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active slide-1" data-slide="0">
+                    <div class="slide-bg"></div>
+                    <img src="images/dc-stepper-motor.jpg" alt="DC Stepper Motor - Brushed metal stepper motor with square mounting flange, cylindrical body, and output shaft on blue glowing platform" class="slide-image" onerror="this.style.display='none'; this.parentElement.querySelector('.slide-placeholder').classList.remove('hide');">
+                    <img src="images/dc-stepper-motor.png" alt="DC Stepper Motor" class="slide-image" style="display:none;" onerror="this.style.display='none';" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
+                    <img src="images/dc-stepper-motor.webp" alt="DC Stepper Motor" class="slide-image" style="display:none;" onerror="this.style.display='none';" onload="this.style.display='block'; this.previousElementSibling.previousElementSibling.style.display='none';">
+                    <div class="slide-placeholder">
+                        <svg viewBox="0 0 400 300" class="placeholder-icon">
+                            <circle cx="200" cy="150" r="80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                            <circle cx="200" cy="150" r="40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                            <line x1="200" y1="70" x2="200" y2="110" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                            <line x1="200" y1="190" x2="200" y2="230" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                            <line x1="120" y1="150" x2="160" y2="150" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                            <line x1="240" y1="150" x2="280" y2="150" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                        </svg>
+                        <p>DC Stepper Motor</p>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2 class="slide-title">DC Stepper Motors</h2>
+                        <p class="slide-description">Precision positioning with high torque and accuracy</p>
+                    </div>
+                </div>
+                <div class="slide slide-2" data-slide="1">
+                    <div class="slide-bg"></div>
+                    <img src="images/ac-synchronous-motor.jpg" alt="AC Synchronous Motor - Syncra Dynamics" class="slide-image" onerror="this.style.display='none';">
+                    <div class="slide-placeholder">
+                        <svg viewBox="0 0 400 300" class="placeholder-icon">
+                            <circle cx="200" cy="150" r="70" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                            <path d="M 200 80 Q 240 150 200 220 Q 160 150 200 80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                            <circle cx="200" cy="150" r="20" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                        </svg>
+                        <p>AC Synchronous Motor</p>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2 class="slide-title">AC Synchronous Motors</h2>
+                        <p class="slide-description">Constant speed operation for reliable performance</p>
+                    </div>
+                </div>
+                <div class="slide slide-3" data-slide="2">
+                    <div class="slide-bg"></div>
+                    <img src="images/gearbox.jpg" alt="Gear Box - Syncra Dynamics" class="slide-image" onerror="this.style.display='none';">
+                    <div class="slide-placeholder">
+                        <svg viewBox="0 0 400 300" class="placeholder-icon">
+                            <circle cx="120" cy="150" r="30" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                            <circle cx="280" cy="150" r="40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                            <rect x="180" y="130" width="20" height="40" fill="rgba(255,255,255,0.2)"/>
+                            <circle cx="120" cy="150" r="10" fill="rgba(255,255,255,0.3)"/>
+                            <circle cx="280" cy="150" r="10" fill="rgba(255,255,255,0.3)"/>
+                        </svg>
+                        <p>Precision Gear Box</p>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2 class="slide-title">Precision Gear Box</h2>
+                        <p class="slide-description">Optimal torque transmission with high efficiency</p>
+                    </div>
+                </div>
+                <div class="slide slide-4" data-slide="3">
+                    <div class="slide-bg"></div>
+                    <img src="images/accessories.jpg" alt="Motor Accessories" class="slide-image" onerror="this.style.display='none';">
+                    <div class="slide-placeholder">
+                        <svg viewBox="0 0 400 300" class="placeholder-icon">
+                            <rect x="80" y="120" width="240" height="160" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                            <rect x="120" y="160" width="160" height="80" fill="rgba(255,255,255,0.15)"/>
+                            <circle cx="200" cy="200" r="15" fill="rgba(255,255,255,0.2)"/>
+                        </svg>
+                        <p>Motor Accessories</p>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2 class="slide-title">Complete Solutions</h2>
+                        <p class="slide-description">Comprehensive accessories for seamless integration</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Navigation Arrows -->
+            <button class="slider-nav prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <button class="slider-nav next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+            
+            <!-- Slider Dots/Indicators -->
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">Precision-engineered solutions for industrial applications</p>
+            
+            <div class="products-grid">
+                <div class="product-card" id="dc-stepper">
+                    <div class="product-image-container">
+                        <img src="images/dc-stepper-motor.jpg" alt="DC Stepper Motor" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-placeholder" style="display:none;">
+                            <svg viewBox="0 0 200 200" class="motor-icon-large">
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <line x1="100" y1="20" x2="100" y2="60" stroke="currentColor" stroke-width="3"/>
+                                <line x1="100" y1="140" x2="100" y2="180" stroke="currentColor" stroke-width="3"/>
+                                <line x1="20" y1="100" x2="60" y2="100" stroke="currentColor" stroke-width="3"/>
+                                <line x1="140" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>DC Stepper Motors</h3>
+                    <p class="product-description">High-precision stepper motors designed for accurate positioning and control applications. Ideal for CNC machines, robotics, and automated systems.</p>
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>High torque and precision positioning</li>
+                            <li>Open-loop control system</li>
+                            <li>Step angles: 1.8° and 0.9°</li>
+                            <li>Holding torque: 0.1 Nm to 10 Nm</li>
+                            <li>Voltage range: 12V to 48V DC</li>
+                            <li>Frame sizes: NEMA 14, 17, 23, 34</li>
+                        </ul>
+                    </div>
+                    <div class="product-specs">
+                        <h4>Applications:</h4>
+                        <p>CNC machines, 3D printers, robotics, medical equipment, automation systems, textile machinery, packaging equipment</p>
+                    </div>
+                </div>
+
+                <div class="product-card" id="ac-synchronous">
+                    <div class="product-image-container">
+                        <img src="images/ac-synchronous-motor.jpg" alt="AC Synchronous Motor with cylindrical body, square mounting flange, and output shaft" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-placeholder" style="display:none;">
+                            <svg viewBox="0 0 200 200" class="motor-icon-large">
+                                <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <path d="M 100 30 Q 140 100 100 170 Q 60 100 100 30" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <circle cx="100" cy="100" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>AC Synchronous Motors</h3>
+                    <p class="product-description">Reliable synchronous motors offering consistent speed and superior performance. Perfect for applications requiring constant speed regardless of load variations.</p>
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Constant speed operation</li>
+                            <li>Synchronized with supply frequency</li>
+                            <li>High efficiency and power factor</li>
+                            <li>Speed range: 500 RPM to 3600 RPM</li>
+                            <li>Voltage: 110V/220V AC, 50Hz/60Hz</li>
+                            <li>Power range: 1W to 100W</li>
+                        </ul>
+                    </div>
+                    <div class="product-specs">
+                        <h4>Applications:</h4>
+                        <p>Clocks, timers, tape recorders, turntables, medical instruments, air conditioning systems, pumps, fans, conveyor systems</p>
+                    </div>
+                </div>
+
+                <div class="product-card" id="gearbox">
+                    <div class="product-image-container">
+                        <img src="images/gearbox.jpg" alt="Gear Box with integrated motor assembly and metallic output shaft" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-placeholder" style="display:none;">
+                            <svg viewBox="0 0 200 200" class="motor-icon-large">
+                                <circle cx="60" cy="100" r="30" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <circle cx="140" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <rect x="90" y="80" width="20" height="40" fill="currentColor" opacity="0.5"/>
+                                <circle cx="60" cy="100" r="10" fill="currentColor"/>
+                                <circle cx="140" cy="100" r="10" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Gear Box</h3>
+                    <p class="product-description">Precision gearboxes engineered for optimal torque transmission and efficiency. Customizable gear ratios to meet specific application requirements.</p>
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Multiple gear ratio options</li>
+                            <li>High torque transmission capacity</li>
+                            <li>Low backlash and high precision</li>
+                            <li>Gear ratios: 1:5 to 1:100</li>
+                            <li>Efficiency: Up to 95%</li>
+                            <li>Material: Hardened steel gears</li>
+                        </ul>
+                    </div>
+                    <div class="product-specs">
+                        <h4>Applications:</h4>
+                        <p>Motor integration, automation equipment, robotics, conveyor systems, packaging machinery, medical devices, precision instruments</p>
+                    </div>
+                </div>
+
+                <div class="product-card" id="accessories">
+                    <div class="product-image-container">
+                        <img src="images/accessories.jpg" alt="Motor Accessories" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-placeholder" style="display:none;">
+                            <svg viewBox="0 0 200 200" class="motor-icon-large">
+                                <rect x="40" y="60" width="120" height="80" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <rect x="60" y="80" width="80" height="40" fill="currentColor" opacity="0.3"/>
+                                <circle cx="100" cy="100" r="15" fill="currentColor" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Extra Accessories</h3>
+                    <p class="product-description">Comprehensive range of accessories to enhance motor performance and integration. Complete solutions for your motor applications.</p>
+                    <div class="product-features">
+                        <h4>Available Accessories:</h4>
+                        <ul>
+                            <li>Motor mounting brackets and flanges</li>
+                            <li>Coupling systems and adapters</li>
+                            <li>Encoder systems and feedback sensors</li>
+                            <li>Motor controllers and drivers</li>
+                            <li>Cables and connectors</li>
+                            <li>Protective covers and enclosures</li>
+                        </ul>
+                    </div>
+                    <div class="product-specs">
+                        <h4>Applications:</h4>
+                        <p>Motor installation, system integration, performance enhancement, custom configurations, maintenance and replacement parts</p>
+                    </div>
+                </div>
+
+                <div class="product-card" id="heatsink">
+                    <div class="product-image-container">
+                        <img src="images/heat-sink.jpg" alt="Heat Sink" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-placeholder" style="display:none;">
+                            <svg viewBox="0 0 200 200" class="motor-icon-large">
+                                <rect x="40" y="40" width="120" height="120" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <line x1="60" y1="60" x2="60" y2="140" stroke="currentColor" stroke-width="3"/>
+                                <line x1="80" y1="60" x2="80" y2="140" stroke="currentColor" stroke-width="3"/>
+                                <line x1="100" y1="60" x2="100" y2="140" stroke="currentColor" stroke-width="3"/>
+                                <line x1="120" y1="60" x2="120" y2="140" stroke="currentColor" stroke-width="3"/>
+                                <line x1="140" y1="60" x2="140" y2="140" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Heat Sink</h3>
+                    <p class="product-description">Advanced cooling solutions to maintain optimal operating temperatures. Essential for high-performance motors and extended operational life.</p>
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Efficient thermal dissipation</li>
+                            <li>Aluminum or copper construction</li>
+                            <li>Multiple fin configurations</li>
+                            <li>Compatible with various motor sizes</li>
+                            <li>Easy installation and maintenance</li>
+                            <li>Custom designs available</li>
+                        </ul>
+                    </div>
+                    <div class="product-specs">
+                        <h4>Applications:</h4>
+                        <p>High-performance motors, continuous duty applications, enclosed motor systems, high-temperature environments, precision equipment cooling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Syncra Dynamics</h2>
+                    <div class="about-description">
+                        <p>Established with a vision to revolutionize precision motor technology, Syncra Dynamics has emerged as a leading manufacturer of AC Synchronous and DC Stepper motors. Our commitment to innovation and quality has positioned us as pioneers in the development of low wattage DC and BLDC motors.</p>
+                        
+                        <p>With decades of experience in motor development, Syncra Dynamics continues to push the boundaries of engineering excellence. We specialize in manufacturing precision motors that power critical applications across various industries, from automation and robotics to medical equipment and industrial machinery.</p>
+                        
+                        <p>Our state-of-the-art manufacturing facility combines advanced technology with skilled craftsmanship to deliver motors that exceed industry standards. We take pride in our ability to provide custom solutions tailored to our clients' specific requirements while maintaining the highest levels of quality and reliability.</p>
+                        
+                        <p>At Syncra Dynamics, we believe that precision in motion drives progress. Our dedicated team of engineers and technicians work tirelessly to ensure every motor that leaves our facility meets our rigorous quality standards and delivers exceptional performance.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Products Delivered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Industry Partners</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="stepper">FAQ - Stepper Motors</button>
+                <button class="faq-category-btn" data-category="synchronous">FAQ - Synchronous Motors</button>
+                <button class="faq-category-btn" data-category="general">General FAQ</button>
+            </div>
+
+            <div class="faq-content">
+                <div class="faq-category active" id="faq-stepper">
+                    <div class="faq-item">
+                        <button class="faq-question">What is a stepper motor and how does it work?</button>
+                        <div class="faq-answer">
+                            <p>A stepper motor is a brushless DC electric motor that divides a full rotation into a number of equal steps. The motor's position can be commanded to move and hold at one of these steps without any feedback sensor, as long as the motor is carefully sized to the application.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What are the advantages of DC stepper motors?</button>
+                        <div class="faq-answer">
+                            <p>DC stepper motors offer precise positioning control, excellent holding torque, no feedback sensors required, and reliable open-loop operation. They are ideal for applications requiring accurate positioning and repeatability.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How do I select the right stepper motor for my application?</button>
+                        <div class="faq-answer">
+                            <p>Selection depends on torque requirements, speed needs, step resolution, voltage, and physical constraints. Our technical team can help you choose the optimal motor based on your specific application requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category" id="faq-synchronous">
+                    <div class="faq-item">
+                        <button class="faq-question">What is an AC synchronous motor?</button>
+                        <div class="faq-answer">
+                            <p>An AC synchronous motor is an AC motor in which the rotation of the shaft is synchronized with the frequency of the supply current. The motor speed remains constant regardless of load, making it ideal for applications requiring constant speed.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What are the key benefits of synchronous motors?</button>
+                        <div class="faq-answer">
+                            <p>Synchronous motors provide constant speed operation, high efficiency, power factor correction capabilities, and excellent performance in applications requiring precise timing or speed control.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How do synchronous motors differ from induction motors?</button>
+                        <div class="faq-answer">
+                            <p>Unlike induction motors, synchronous motors operate at a constant speed synchronized with the supply frequency and can operate at leading power factors, making them useful for power factor correction in industrial applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category" id="faq-general">
+                    <div class="faq-item">
+                        <button class="faq-question">Do you offer custom motor solutions?</button>
+                        <div class="faq-answer">
+                            <p>Yes, Syncra Dynamics specializes in custom motor solutions tailored to specific customer requirements. Our engineering team works closely with clients to design motors that meet exact specifications.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is your lead time for standard products?</button>
+                        <div class="faq-answer">
+                            <p>Standard products typically ship within 2-4 weeks. Lead times for custom solutions vary based on complexity and quantity. Please contact us for specific delivery schedules.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you provide technical support?</button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Our technical support team is available to assist with motor selection, installation guidance, troubleshooting, and integration support. Contact us through email or phone for technical assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drawings Section -->
+    <section id="drawings" class="drawings-section">
+        <div class="container">
+            <h2 class="section-title">Technical Drawings & Diagrams</h2>
+            <p class="section-subtitle">Download technical specifications and connection diagrams</p>
+            
+            <div class="drawings-grid">
+                <div class="drawing-card">
+                    <div class="drawing-icon">📐</div>
+                    <h3>Download PDF Drawing</h3>
+                    <p>Complete technical drawings package</p>
+                    <a href="#" class="btn btn-outline">Download PDF</a>
+                </div>
+                <div class="drawing-card">
+                    <div class="drawing-icon">🔌</div>
+                    <h3>Connection Diagram - Stepper Motor</h3>
+                    <p>Wiring and connection specifications</p>
+                    <a href="#" class="btn btn-outline">View Diagram</a>
+                </div>
+                <div class="drawing-card">
+                    <div class="drawing-icon">⚡</div>
+                    <h3>Connection Diagram - Synchronous Motor</h3>
+                    <p>AC synchronous motor connections</p>
+                    <a href="#" class="btn btn-outline">View Diagram</a>
+                </div>
+                <div class="drawing-card">
+                    <div class="drawing-icon">⚙️</div>
+                    <h3>Gear Box Specifications</h3>
+                    <p>Detailed gearbox technical drawings</p>
+                    <a href="#" class="btn btn-outline">View Specs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our team for inquiries and support</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Corporate Office</h3>
+                        <p>Syncra Dynamics Pvt. Ltd.<br>
+                        Industrial Estate, Manufacturing Zone<br>
+                        Pune - 411 009, Maharashtra, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Telephone</h3>
+                        <p><a href="tel:9075092212">+91 9075092212</a><br>
+                        <a href="tel:7066292212">+91 7066292212</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:syncra.dynamics@gmail.com">syncra.dynamics@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 1:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="product-inquiry">Product Inquiry</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="custom-solution">Custom Solution</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SYNCRA DYNAMICS</h3>
+                    <p>Precision in Motion - Engineering Excellence Since Inception</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#dc-stepper">DC Stepper Motors</a></li>
+                        <li><a href="#ac-synchronous">AC Synchronous Motors</a></li>
+                        <li><a href="#gearbox">Gear Box</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Pune - 411 009, India</p>
+                    <p><a href="tel:9075092212">+91 9075092212</a></p>
+                    <p><a href="tel:7066292212">+91 7066292212</a></p>
+                    <p><a href="mailto:syncra.dynamics@gmail.com">syncra.dynamics@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Syncra Dynamics Pvt. Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
